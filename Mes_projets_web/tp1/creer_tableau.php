@@ -1,9 +1,9 @@
 <?php
-    $articles = range("A","Z");
+    $articles = range("A","J");
     
     function gener($n) {
         $tva = [0.05,0.10,0.20];
-        $prix_rand = rand(0,100);
+        $prix_rand = rand(0,1000);
         $tva_rand = $tva[array_rand($tva)];
         
         return  ["prix"=>$prix_rand, "taux"=>$tva_rand];

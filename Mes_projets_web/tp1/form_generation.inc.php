@@ -2,14 +2,20 @@
     function creeTexte($nom, $affichage) {
         echo $affichage. " : <input type='text' name=".$nom.">";
     }
-    function creebutton($nom, ...$affichage) {
-        foreach ($affichage as $val=>$key)
-        echo $val ." : <input type='radio' name=".$nom." id=".$key.">";
+    function creebuttonradio($nom,...$affichage) {
+		echo "<table>";
+        foreach($affichage as $val){
+			echo "<tr>";
+			echo "<td>".$val ."</td>";
+			echo "<td>: <input type='radio' name=".$nom." id=".$val."</td>";
+			echo "</tr>";
+		}
+		echo "</table>";
     }
     function creeButtonSubmit($nom) {
-        echo "<input type='submit' name=".$nom.">";
+        echo "<input type='submit' value=".$nom.">";
     }
     function creeButtonReset($nom) {
-        echo "<input type='reset' name=".$nom.">";
+        echo "<input type='reset' value=".$nom.">";
     }
 ?>
