@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT employees (employee+, manager*) >
+<!ELEMENT employee (id, name, salary, age) >
+<!ELEMENT manager (id, name, salary, age, subordinate) >
+
+<!ELEMENT subordinate (refId+)>
+
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT salary (#PCDATA) >
+<!ELEMENT age (#PCDATA) >
+<!ELEMENT refId (#PCDATA) >
