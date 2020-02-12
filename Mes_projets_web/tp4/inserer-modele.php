@@ -30,13 +30,25 @@
 				</tr>
 				<tr>
 					<td><input type="reset" value=" Effacer "></td>
-					<td><input type="submit" value=" Envoyer "></td>
+					<td><input type="submit" value=" Envoyer " name="envoyer"></td>
 				</tr>
 			</table>
 		</fieldset>
 	</form>
 <?php
-// TODO
+		require ("afficher-modeles.php");
+		if(isset($_POST["envoyer"])){
+			$id = $pdo->quote($_POST["id_modele"]);
+			$mod = $pdo->quote($_POST["modele"]);
+			$car = $pdo->quote($_POST["carburant"]);;
+			
+			$qry="INSERT INTO `modele` (id_modele, modele, carburant) VALUES ($id, $mod, $car);";
+			$qry2="delete from modele where id_modele='';";
+			$pdo->query($qry2);
+			$pdo->query($qry);
+		
+		}
+	
 ?>
 </body>
 </html>
