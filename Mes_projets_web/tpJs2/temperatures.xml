@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<temperatures>
+  <city>Angers, France</city>
+  <month name="january"   label="jan" value="4.1" />
+  <month name="february"  label="feb" value="5.4" />
+  <month name="march"     label="mar" value="7.5" />
+  <month name="april"     label="apr" value="11.0" />
+  <month name="may"       label="may" value="14.0" />
+  <month name="june"      label="jun" value="17.4" />
+  <month name="july"      label="jul" value="19.5" />
+  <month name="august"    label="aug" value="19.1" />
+  <month name="september" label="sep" value="16.4" />
+  <month name="october"   label="oct" value="11.8" />
+  <month name="november"  label="nov" value="7.4" />
+  <month name="december"  label="dec" value="4.4" />
+</temperatures>
+

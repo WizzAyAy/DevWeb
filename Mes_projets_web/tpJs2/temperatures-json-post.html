@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ajax POST : JSON</title>
+<style>
+table {
+	margin: auto;
+}
+
+table, tr, th, td {
+	border: black 1px solid;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+th, td {
+	width: 100px;
+}
+</style>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1 style="text-align: center">Average temperatures for Angers</h1>
+	<select id="choix" name="month">
+		<option value="january">January</option>
+		<option value="february">February</option>
+		<option value="march">March</option>
+		<option value="april">April</option>
+		<option value="june">June</option>
+		<option value="july">July</option>
+		<option value="august">August</option>
+		<option value="september">September</option>
+		<option value="october">October</option>
+		<option value="november">November</option>
+		<option value="december">December</option>
+	</select>
+	<table id="tableau">
+		<tr>
+			<th>Month</th>
+			<th>Average temperature</th>
+		</tr>
+	</table>
+</body>
+</html>
